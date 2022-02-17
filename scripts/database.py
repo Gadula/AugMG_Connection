@@ -11,7 +11,6 @@ class Database:
 
 
     def getData(self):
-        final_data = []
         self.cur = self.connector.cursor(buffered=True)
         self.cur.execute("SELECT product_type, product_id, product_desc, image_url FROM products")
         rows = self.cur.fetchall()
