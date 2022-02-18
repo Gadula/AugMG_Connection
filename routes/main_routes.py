@@ -15,5 +15,5 @@ def getHome():
         cardInfos.append(cardInfo)
     
     cardInfoJSON = json.dumps(cardInfos)
-    return cardInfoJSON
+    return {"json" : cardInfoJSON}
 
