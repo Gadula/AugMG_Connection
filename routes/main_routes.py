@@ -14,6 +14,6 @@ def getHome():
         cardInfo={"cardType":row[0], "product_id":row[1], "text":row[2], "url": row[3]}
         cardInfos.append(cardInfo)
     
-    cardInfoJSON = json.dumps(cardInfos)
-    return {"json" : cardInfoJSON}
+    cardInfoJSON = json.dumps({"json" : cardInfos})
+    return cardInfoJSON
 
