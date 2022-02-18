@@ -12,7 +12,7 @@ class Database:
 
     def getData(self):
         self.cur = self.connector.cursor(buffered=True)
-        self.cur.execute("SELECT product_type, product_id, product_desc, image_url FROM products")
+        self.cur.execute("SELECT product_type, product_id, message, image_url FROM products")
         rows = self.cur.fetchall()
         self.cur.close()
         self.connector.close()
